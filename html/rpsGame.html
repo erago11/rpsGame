@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="ja" dir="ltr">
   <head>
     <title>RockPaperSissors</title>
@@ -9,7 +8,73 @@
   <body>
     <header></header>
     <div class="main">
-      <h1 class="hw">Hello World!</h1>
+      <div class="game_containar">
+        <div class ="window game_window">
+          <div class="player player_stars">
+            <img class="picture" id="pic_star" src="../img/star.png" alt="星">
+            <img class="picture" id="pic_multiply" src="../img/multiply.png" alt="積">
+            <p class = "star_num">5</p>
+          </div>
+          <div class="player player_hands_left">
+            <div class = "hands_area" >
+              <img class="picture hands" src="../img/rock.jpg" alt="グー">
+              <img class="picture" id="pic_multiply" src="../img/multiply.png" alt="積">
+              <p class = "hands_num rock">5</p>
+            </div>
+            <div class = "hands_area" >
+              <img class="picture hands" src="../img/paper.jpg" alt="パー">
+              <img class="picture" id="pic_multiply" src="../img/multiply.png" alt="積">
+              <p class = "hands_num paper">3</p>
+            </div>
+            <div class = "hands_area" >
+              <img class="picture hands" src="../img/sissors.jpg" alt="チョキ">
+              <img class="picture" id="pic_multiply" src="../img/multiply.png" alt="積">
+              <p class = "hands_num sissors">4</p>
+            </div>
+          </div>
+          <div class="player player_info">
+            <!-- class にactiveをつけて勝ったときと負けたとき -->
+            <img class="picture" src="../img/player1.png" alt="プレイヤー">
+            <!-- 点線枠に変える スクリプトで選んだ手札を表示させる -->
+            <img class="picture hands no_choice" src="../img/no-choice.png" alt="空">
+            <p class = "">あなた</p>
+          </div>
+          <div class="versus">VS</div>
+          <div class="player cp_info">
+            <img class="picture" src="../img/warumono.png" alt="CP">
+            <!-- 点線枠に変える スクリプトで選んだ手札を表示させる -->
+            <img class="picture hands" src="../img/back_card.png" alt="伏せカード">
+            <p class = "">あいて</p>
+          </div>
+          <div class="player cp_hands_left">
+            <div class = "hands_area" >
+              <img class="picture hands" src="../img/rock.jpg" alt="グー">
+              <img class="picture" id="pic_multiply" src="../img/multiply.png" alt="積">
+              <p>?</p>
+            </div>
+            <div class = "hands_area" >
+              <img class="picture hands" src="../img/paper.jpg" alt="パー">
+              <img class="picture" id="pic_multiply" src="../img/multiply.png" alt="積">
+              <p>?</p>
+            </div>
+            <div class = "hands_area" >
+              <img class="picture hands" src="../img/sissors.jpg" alt="チョキ">
+              <img class="picture" id="pic_multiply" src="../img/multiply.png" alt="積">
+              <p>?</p>
+            </div>
+          </div>
+          <div class="player cp_No">
+            <p>?</p>人目
+          </div>
+        </div>
+        <div class="message_containar">
+          <div class ="window message_window_out">
+            <div class ="message_window_in">
+              しんでしまうとはなさけない
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer></footer>
   </body>
