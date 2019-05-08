@@ -24,8 +24,6 @@
   box-sizing: border-box;
   width:20%;
   height:100%;
-  /* 最終的に削除する */
-  border: solid 5px #00fdf8;
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -63,21 +61,39 @@
   margin:0 5px;
 }
 
-.no_choice{
+#no_choice{
   height:117.31px;
 }
 
+.non_select{
+  display:none;
+}
 
 .versus{
   display: inline-block;
+  background-color: #ffa300;
   align-self: center;
   width:5%;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  border-bottom: 4px solid #d37800;
+  cursor:pointer;
+}
 
+.versus:active {
+    transform: translateY(4px);
+    border-bottom: none;
 }
 
 .cp_No{
   width:5%;
   font-size: 25px;
+}
+
+.message_containar{
+  position: relative;
 }
 
 .message_window_in {
@@ -96,4 +112,26 @@
   background-color: #000000;
   border-radius: 12px;
   margin:30px auto;
+}
+
+.next_button{
+  position:absolute;
+  top:225px;
+  left:950px;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #000;
+  background-color:#fff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+  width:50px;
+  display:none;
+  cursor:pointer;
+}
+
+.next_button:hover{
+  color: #fff;
+  background-color:#000;
 }
