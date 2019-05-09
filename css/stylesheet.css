@@ -12,7 +12,7 @@
 }
 
 .game_window{
-  height:400px;
+  height:410px;
   border: solid 5px #008080;
   text-align: center;
   display: flex;
@@ -40,8 +40,20 @@
   height: auto;
 }
 
+.player .hands{
+  height: 117px;
+}
+
 #pic_multiply{
   width: 23px;
+}
+
+#player_icon{
+  height:225px;
+}
+
+#cp_icon{
+  height:225px;
 }
 
 .hands_area{
