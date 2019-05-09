@@ -49,7 +49,7 @@ $(function() {
       $('.next_button').css('display', 'inherit');
       $('.message_window_in').html('相手が手札選択中・・・<br>' + push_next);
       //CPの手札選択 1:グー、2:パー 3:チョキ
-      var cp_hands_id = 1//Math.floor(Math.random() * 3 + 1);
+      var cp_hands_id = Math.floor(Math.random() * 3 + 1);
       next_trigger = 0;
       var next_message = setInterval(function() {
           if (next_trigger === 1) {
